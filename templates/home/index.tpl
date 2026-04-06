@@ -17,7 +17,7 @@
                         <h1 class="display-2 text-uppercase text-dark">Blog</h1>
                         <div class="breadcrumbs">
                             <span class="item">
-                              <a href="/">Главная страница </a>
+                              <a href="/">Номе </a>
                             </span>
 
                         </div>

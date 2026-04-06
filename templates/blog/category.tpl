@@ -70,7 +70,7 @@
                                             </h3>
 
                                             <div class="card-meta text-muted">
-                                                <small>Просмотры: {$post.views}</small><br>
+                                                <small>Views: {$post.views}</small><br>
                                                 <span class="meta-date">{$post.created_at}</span>
                                             </div>
 

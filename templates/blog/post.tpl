@@ -30,7 +30,7 @@
                                     </div>
                                     <div class="post-meta text-uppercase">
                                         <span class="post-category">{$post.created_at} </span> <span class="meta-date"></span>
-                                        <p><strong>Просмотры:</strong> {$post.views}</p>
+                                        <p><strong>Views:</strong> {$post.views}</p>
                                     </div>
 
                                 </div>
@@ -47,7 +47,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="display-header d-flex justify-content-between pb-3">
-                                        <h2 class="display-7 text-dark text-uppercase">Похожие статьи</h2>
+                                        <h2 class="display-7 text-dark text-uppercase">Related Articles</h2>
                                         <div class="btn-right">
                                             <a href="#" class="btn btn-medium btn-normal text-uppercase"></a>
                                         </div>
