@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Если файл или папка реально существует — отдаем напрямую
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Всё остальное перенаправляем на папку public
+RewriteRule ^(.*)$ public/$1 [L]
