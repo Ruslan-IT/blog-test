@@ -169,7 +169,7 @@ class Model {
      * ПОЛУЧЕНИЕ ПО URL
      *
      */
-    public function getBySlug($slug)
+    public static  function getBySlug($slug)
     {
         $table = static::$table;
 
@@ -187,7 +187,7 @@ class Model {
      */
 
 
-    public function getPostsByCategory($categoryId, $sort, $limit, $offset)
+    public static  function getPostsByCategory($categoryId, $sort, $limit, $offset)
     {
         $limit = (int)$limit;
         $offset = (int)$offset;
@@ -219,7 +219,7 @@ class Model {
      * Количество постов
      * */
 
-    public function getPostsCountByCategory($categoryId)
+    public static  function getPostsCountByCategory($categoryId)
     {
         $sql = "
         SELECT COUNT(*) as total
@@ -243,7 +243,7 @@ class Model {
      *
      */
 
-    public function getCategoriesByPost($postId)
+    public static function getCategoriesByPost($postId)
     {
         $stmt = self::db()->prepare("
         SELECT c.*
@@ -265,7 +265,7 @@ class Model {
      *
      * */
 
-    public function getRelatedPosts($categoryId, $currentPostId, $limit)
+    public static function getRelatedPosts($categoryId, $currentPostId, $limit)
     {
         $limit = (int)$limit;
 

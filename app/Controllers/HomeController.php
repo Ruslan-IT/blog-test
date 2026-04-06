@@ -11,17 +11,15 @@ class HomeController {
 
     public function index() {
 
-        $categoryModel = new Category();
-        $postModel = new Post();
-
-        $categories = $categoryModel::all();
+        
+        $categories = Category::all();
 
         $categoriesWithPosts  = [];
 
         foreach ($categories as $category) {
 
             // Получаем 3 последних поста этой категории
-            $posts = $postModel::getLatestPostsByCategory($category['id'], 3);
+            $posts = Post::getLatestPostsByCategory($category['id'], 3);
 
             // (только если есть посты)
             if (!empty($posts)) {
